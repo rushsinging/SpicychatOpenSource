@@ -1,0 +1,6 @@
+*.pyc
+hall/dist/*
+hall/node_modules/*
+.python-version
+.vscode/*
+.DS_Store

@@ -1,0 +1,7 @@
+fastapi[standard]
+redis
+ollama
+requests
+ollama
+psycopg2
+jinja2

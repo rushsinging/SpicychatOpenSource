@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>聊天室</title>
+    <link rel="stylesheet" href="/static/main.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- 左侧聊天室列表 -->
+      <div class="room-list">
+        <h3>我的聊天室</h3>
+        <div id="joinedRooms">
+          {% for character in characters %}
+          <div
+            class="room-item"
+            id="{{ character['id'] }}"
+            onclick="chat('{{ character['id'] }}')"
+          >
+            {{ character['name'] }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- 中间聊天区域 -->
+      <div class="chat-container">
+        <input type="hidden" id="token" value="{{ token }}" />
+        <div class="user-info">
+          请输入昵称
+          <input
+            type="text"
+            id="nickname"
+            placeholder="输入昵称"
+            value="{{ nickname }}"
+          />
+          <button onclick="update_nickname()">更新昵称</button>
+          请选择模型:
+          <select id="model" onchange="select_model(event)">
+            {% for model in models %}
+            <option value="{{ model['model'] }}">{{ model['name'] }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+
+        <div class="messages" id="messages" style="overflow-y: auto; scroll-behavior: smooth;" onmousewheel="this.scrollTop=this.scrollHeight"></div>
+
+        <form class="input-area">
+          <input
+            type="text"
+            id="messageText"
+            placeholder="请先在左侧列表选择一个角色开始聊天"
+            autocomplete="off"
+            disabled="disabled"
+          />
+          <button type="submit" onclick="send_message(event)">发送</button>
+          <button type="submit" onclick="clear_history(event)">清空历史</button>
+        </form>
+      </div>
+
+      <!-- 右侧房间信息 -->
+      <div class="character-info">
+        <img
+          id="characterImage"
+          src="https://via.placeholder.com/250x150"
+          alt="聊天室图片"
+        />
+        <h3 id="characterName"></h3>
+        <button onclick="update_character_settings(event)">更新角色设置</button>
+        <textarea id="characterDescription">请先在左侧列表选择一个角色开始聊天</textarea>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/static/main.js"></script>
+  </body>
+</html>

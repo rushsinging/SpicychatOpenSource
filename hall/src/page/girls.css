@@ -1,0 +1,2420 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 1920px;
+  margin: 0 auto;
+}
+.section {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 64px;
+  background: #131313;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.section-2 {
+  position: absolute;
+  width: 1344px;
+  height: 63px;
+  top: 0;
+  left: 544px;
+  background: #131313;
+  z-index: 25;
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 172px;
+  height: 32px;
+  top: 15px;
+  left: 1059.5px;
+  padding: 6px 16px 6px 16px;
+  background: #ce47ff;
+  z-index: 28;
+  border-radius: 8px;
+}
+.text {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 20px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 29;
+}
+.text-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 20px;
+  top: 22px;
+  left: 1263px;
+  color: #ce47ff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 32;
+}
+.wrapper {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  left: 32px;
+  z-index: 4;
+  overflow: hidden;
+}
+.wrapper-2 {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  margin: -1px 0 0 17px;
+  z-index: 2;
+  overflow: hidden;
+}
+.text-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 102px;
+  height: 1px;
+  top: 0;
+  left: 2px;
+  color: #374151;
+  font-family: Inter, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 3;
+}
+.pic {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/logo-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 5;
+  overflow: hidden;
+}
+.section-3 {
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  top: 50%;
+  left: 86px;
+  transform: translate(0, -50%);
+  z-index: 7;
+  overflow: hidden;
+}
+.wrapper-3 {
+  position: relative;
+  width: 150px;
+  height: 28px;
+  margin: 0 0 0 0;
+  z-index: 8;
+  overflow: hidden;
+}
+.box {
+  position: relative;
+  width: 104px;
+  height: 34px;
+  margin: -4.191px 0 0 8px;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 27.188278198242188px;
+  font-weight: 400;
+  line-height: 33.985px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 9;
+}
+.text-4 {
+  position: relative;
+  color: #d471f9;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 27.188278198242188px;
+  font-weight: 400;
+  line-height: 33.985px;
+  text-align: left;
+}
+.text-5 {
+  position: relative;
+  color: #ffffff;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 27.188278198242188px;
+  font-weight: 400;
+  line-height: 33.985px;
+  text-align: left;
+}
+.text-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 41px;
+  height: 19px;
+  top: 21px;
+  left: 387px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 24;
+}
+.text-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 19px;
+  top: 21px;
+  left: 300px;
+  color: #ce47ff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 17;
+}
+.group-2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 23px;
+  left: 278px;
+  z-index: 15;
+  overflow: hidden;
+}
+.pic-2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/home-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 16;
+  overflow: hidden;
+}
+.group-3 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 23px;
+  left: 365px;
+  z-index: 22;
+  overflow: hidden;
+}
+.pic-3 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/explore-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 23;
+  overflow: hidden;
+}
+.box-2 {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 1016px;
+  background: #131313;
+  z-index: 33;
+  overflow: hidden;
+}
+.section-4 {
+  position: absolute;
+  width: 219px;
+  height: 996px;
+  top: 0;
+  left: 0;
+  z-index: 34;
+}
+.box-3 {
+  position: relative;
+  width: 219px;
+  height: 376px;
+  margin: 0 0 0 0;
+  z-index: 35;
+  overflow: hidden;
+}
+.box-4 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 24px 0 0 24px;
+  z-index: 36;
+}
+.box-5 {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 37;
+  border-radius: 10px;
+}
+.section-5 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 38;
+  overflow: hidden;
+}
+.pic-4 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/search-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 39;
+  overflow: hidden;
+}
+.text-8 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 16px;
+  top: 11px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 40;
+}
+.group-4 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 8px 0 0 24px;
+  z-index: 41;
+}
+.wrapper-4 {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 42;
+  border-radius: 10px;
+}
+.box-6 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 43;
+  overflow: hidden;
+}
+.img {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/dashboard-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 44;
+  overflow: hidden;
+}
+.text-9 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 16px;
+  top: 11px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 45;
+}
+.section-6 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 8px 0 0 24px;
+  z-index: 46;
+}
+.wrapper-5 {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 47;
+  border-radius: 10px;
+}
+.group-5 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 48;
+  overflow: hidden;
+}
+.img-2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/settings-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 49;
+  overflow: hidden;
+}
+.text-a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 16px;
+  top: 11px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 50;
+}
+.group-6 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 8px 0 0 24px;
+  z-index: 51;
+}
+.box-7 {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 52;
+  border-radius: 10px;
+}
+.box-8 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 53;
+  overflow: hidden;
+}
+.img-3 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/profile-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 54;
+  overflow: hidden;
+}
+.text-b {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 12px;
+  top: 13px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 55;
+}
+.wrapper-6 {
+  position: relative;
+  width: 219px;
+  height: 237px;
+  margin: 383px 0 0 0;
+  border-bottom: 1px solid #363636;
+  z-index: 56;
+  overflow: visible auto;
+}
+.wrapper-7 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 25px 0 0 24px;
+  z-index: 57;
+}
+.section-7 {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  z-index: 58;
+  border-radius: 10px;
+}
+.box-9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  padding: 8px 155px 8px 155px;
+  background: linear-gradient(122.98deg, #ce47ff, #ab0de5);
+  z-index: 59;
+  border-radius: 10px;
+}
+.img-4 {
+  flex-shrink: 0;
+  position: absolute;
+  width: 21px;
+  height: 17px;
+  top: 12px;
+  left: 11px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/premium-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 63;
+  overflow: hidden;
+}
+.group-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: -3px;
+  position: relative;
+  width: 63px;
+  z-index: 60;
+}
+.text-c {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 13px;
+  color: #f2d1ff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 8.605371475219727px;
+  font-weight: 600;
+  line-height: 12.293px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 61;
+}
+.text-d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 32px;
+  height: 23px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 15.749999046325684px;
+  font-weight: 600;
+  line-height: 22.066px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 62;
+}
+.wrapper-8 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 9px 0 0 24px;
+  z-index: 64;
+}
+.section-8 {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 65;
+  border-radius: 10px;
+}
+.text-e {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 16px;
+  top: 9px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 68;
+}
+.wrapper-9 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 66;
+  overflow: hidden;
+}
+.img-5 {
+  position: relative;
+  width: 16px;
+  height: 13px;
+  margin: 0 0 0 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/favorites-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 67;
+  overflow: hidden;
+}
+.group-8 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 9px 0 0 24px;
+  z-index: 69;
+}
+.section-9 {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 70;
+  border-radius: 10px;
+}
+.text-f {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 16px;
+  top: 9px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 73;
+}
+.group-9 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 71;
+  overflow: hidden;
+}
+.pic-5 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/history-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 72;
+  overflow: hidden;
+}
+.section-a {
+  position: relative;
+  width: 171px;
+  height: 20px;
+  margin: 57px 0 0 24px;
+  font-size: 0px;
+  z-index: 74;
+  overflow: visible auto;
+}
+.text-10 {
+  display: block;
+  position: relative;
+  height: 8px;
+  margin: 10px 0 0 0;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 8px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 79;
+}
+.box-a {
+  position: relative;
+  width: 84px;
+  height: 8px;
+  margin: -6px 0 0 64px;
+  z-index: 75;
+  overflow: visible auto;
+}
+.group-a {
+  position: relative;
+  width: 76px;
+  height: 8px;
+  margin: 0 0 0 0;
+  z-index: 76;
+}
+.text-11 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 8px;
+  top: -2px;
+  left: 12px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 8px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 78;
+}
+.section-b {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 2px;
+  left: 0;
+  background: #ffffff;
+  z-index: 77;
+  border-radius: 9999px;
+}
+.section-c {
+  position: absolute;
+  height: 1102px;
+  top: 40px;
+  right: 182px;
+  left: 458px;
+  z-index: 101;
+}
+.box-b {
+  position: relative;
+  width: 1280px;
+  height: 256px;
+  margin: 0 0 0 0;
+  background: #111827;
+  z-index: 80;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.img-6 {
+  position: absolute;
+  width: 1289px;
+  height: 325px;
+  top: -56px;
+  left: -5px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/hero-banner.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 100;
+}
+.section-d {
+  position: absolute;
+  width: 1280px;
+  height: 256px;
+  top: 0;
+  left: -1085px;
+  z-index: 81;
+}
+.section-e {
+  position: absolute;
+  width: 1280px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  z-index: 82;
+  overflow: hidden;
+}
+.group-b {
+  position: absolute;
+  width: 1280px;
+  height: 256px;
+  top: 0;
+  left: 1280px;
+  z-index: 83;
+}
+.wrapper-a {
+  position: absolute;
+  width: 1280px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  z-index: 84;
+  overflow: hidden;
+}
+.section-f {
+  position: absolute;
+  width: 1280px;
+  height: 256px;
+  top: 0;
+  left: 2560px;
+  z-index: 85;
+}
+.box-c {
+  position: absolute;
+  width: 1280px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  z-index: 86;
+  overflow: hidden;
+}
+.wrapper-b {
+  position: absolute;
+  width: 50px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  z-index: 87;
+}
+.section-10 {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: -2px;
+  left: 0;
+  z-index: 88;
+}
+.group-c {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: 0;
+  left: 0;
+  z-index: 89;
+  overflow: hidden;
+}
+.wrapper-c {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  overflow: hidden;
+}
+.pic-6 {
+  position: relative;
+  width: 10px;
+  height: 18px;
+  margin: 121px 0 0 20px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/left-arrow.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 91;
+}
+.group-d {
+  position: absolute;
+  width: 50px;
+  height: 256px;
+  top: 0;
+  left: 1230px;
+  z-index: 92;
+}
+.section-11 {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: -2px;
+  left: 0;
+  z-index: 93;
+}
+.section-12 {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: 0;
+  left: 0;
+  z-index: 94;
+  overflow: hidden;
+}
+.box-d {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: 0;
+  left: 0;
+  z-index: 95;
+  overflow: hidden;
+}
+.pic-7 {
+  position: relative;
+  width: 10px;
+  height: 18px;
+  margin: 121px 0 0 20px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/right-arrow.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 96;
+}
+.box-e {
+  position: absolute;
+  width: 44px;
+  height: 6px;
+  top: 234px;
+  left: 618px;
+  z-index: 97;
+}
+.section-13 {
+  position: absolute;
+  width: 18px;
+  height: 6px;
+  top: 0;
+  left: 26px;
+  background: #ce47ff;
+  z-index: 99;
+  border-radius: 9999px;
+}
+.section-14 {
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  top: 2px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 98;
+  border-radius: 9999px;
+}
+.group-e {
+  position: relative;
+  width: 1280px;
+  height: 824px;
+  margin: 22px 0 0 0;
+  z-index: 101;
+  overflow: visible auto;
+}
+.wrapper-d {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 1280px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 144;
+}
+.box-f {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 102;
+}
+.section-15 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 103;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.wrapper-e {
+  position: relative;
+  width: 79px;
+  height: 44px;
+  margin: 0 0 0 221px;
+  z-index: 107;
+  overflow: visible auto;
+}
+.group-f {
+  position: relative;
+  width: 63px;
+  height: 28px;
+  margin: 8px 0 0 8px;
+  background: #ce47ff;
+  z-index: 108;
+  border-radius: 9999px;
+}
+.text-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 31px;
+  height: 20px;
+  top: 4px;
+  left: calc(50% - 7.5px);
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 110;
+}
+.pic-8 {
+  position: absolute;
+  width: 17.32%;
+  height: 46.15%;
+  top: 30.49%;
+  left: 13.56%;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/hot-badge.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 109;
+}
+.wrapper-f {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 104;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.pic-9 {
+  position: absolute;
+  width: 310px;
+  height: 400px;
+  top: 0;
+  left: -5px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/card-image-1.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 105;
+}
+.group-10 {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 106;
+}
+.group-11 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 111;
+}
+.box-10 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 112;
+}
+.text-13 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 113;
+}
+.text-14 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 64px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 114;
+}
+.section-16 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 115;
+  overflow: hidden;
+}
+.text-15 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 246px;
+  height: 100px;
+  top: -30px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 116;
+  overflow: hidden;
+}
+.section-17 {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 117;
+}
+.wrapper-10 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 118;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.section-18 {
+  position: relative;
+  width: 79px;
+  height: 44px;
+  margin: 0 0 0 221px;
+  z-index: 122;
+  overflow: visible auto;
+}
+.group-12 {
+  position: relative;
+  width: 63px;
+  height: 28px;
+  margin: 8px 0 0 8px;
+  background: #ce47ff;
+  z-index: 123;
+  border-radius: 9999px;
+}
+.text-16 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 31px;
+  height: 20px;
+  top: 4px;
+  left: 24px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 126;
+}
+.section-19 {
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  top: 8px;
+  left: 8px;
+  z-index: 124;
+  overflow: hidden;
+}
+.pic-a {
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/new-badge-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 125;
+  overflow: hidden;
+}
+.box-11 {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 119;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.img-7 {
+  position: absolute;
+  width: 309px;
+  height: 463px;
+  top: 0;
+  left: -5px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/card-image-2.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 120;
+}
+.section-1a {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 121;
+}
+.group-13 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 127;
+}
+.group-14 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 128;
+}
+.text-17 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 129;
+}
+.text-18 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 82px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 130;
+}
+.wrapper-11 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 131;
+  overflow: hidden;
+}
+.text-19 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 235px;
+  height: 100px;
+  top: -30px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 132;
+  overflow: hidden;
+}
+.group-15 {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 133;
+}
+.wrapper-12 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 134;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.wrapper-13 {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 135;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.pic-b {
+  position: absolute;
+  width: 338px;
+  height: 493px;
+  top: 0;
+  left: -19px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/card-image-3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 136;
+}
+.section-1b {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 137;
+}
+.wrapper-14 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 138;
+}
+.group-16 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 139;
+}
+.text-1a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 140;
+}
+.text-1b {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 141;
+}
+.group-17 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 142;
+  overflow: hidden;
+}
+.text-1c {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 276px;
+  height: 240px;
+  top: -100px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 143;
+  overflow: hidden;
+}
+.wrapper-15 {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 144;
+}
+.group-18 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 145;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.box-12 {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 146;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.pic-c {
+  position: absolute;
+  width: 320px;
+  height: 427px;
+  top: -13px;
+  left: -10px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/card-image-4.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 147;
+}
+.box-13 {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 148;
+}
+.group-19 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 149;
+}
+.group-1a {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 150;
+}
+.text-1d {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 151;
+}
+.text-1e {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 97px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 152;
+}
+.box-14 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 153;
+  overflow: hidden;
+}
+.text-1f {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 273px;
+  height: 100px;
+  top: -30px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 154;
+  overflow: hidden;
+}
+.group-1b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 1280px;
+  height: 400px;
+  margin: 24px 0 0 0;
+  z-index: 193;
+}
+.group-1c {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 155;
+}
+.box-15 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 156;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.wrapper-16 {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 157;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.img-8 {
+  position: absolute;
+  width: 305px;
+  height: 575px;
+  top: -41px;
+  left: -5px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/card-image-5.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 158;
+}
+.box-16 {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 159;
+}
+.box-17 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 160;
+}
+.group-1d {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 161;
+}
+.text-20 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 162;
+}
+.text-21 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 135px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 163;
+}
+.wrapper-17 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 164;
+  overflow: hidden;
+}
+.college-pom-pom-girl {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 225px;
+  height: 120px;
+  top: -40px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 165;
+  overflow: hidden;
+}
+.pages-wrapper {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 166;
+}
+.flex {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 167;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.absolute {
+  position: relative;
+  width: 79px;
+  height: 44px;
+  margin: 0 0 0 221px;
+  z-index: 171;
+  overflow: visible auto;
+}
+.flex-1 {
+  position: relative;
+  width: 63px;
+  height: 28px;
+  margin: 8px 0 0 8px;
+  background: #ce47ff;
+  z-index: 172;
+  border-radius: 9999px;
+}
+.new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 31px;
+  height: 20px;
+  top: 4px;
+  left: 24px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 175;
+}
+.w {
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  top: 8px;
+  left: 8px;
+  z-index: 173;
+  overflow: hidden;
+}
+.image {
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/new-badge-icon-2.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 174;
+  overflow: hidden;
+}
+.z {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 168;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.image-2 {
+  position: absolute;
+  width: 302px;
+  height: 596px;
+  top: 0;
+  left: -1px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/card-image-6.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 169;
+}
+.absolute-3 {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 170;
+}
+.z-4 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 176;
+}
+.flex-5 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 177;
+}
+.seraphina {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 178;
+}
+.text-25 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 135px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 179;
+}
+.text-xs {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 180;
+  overflow: hidden;
+}
+.biker-chick {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  top: -30px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 181;
+  overflow: hidden;
+}
+.pages-wrapper-6 {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 182;
+}
+.flex-7 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 183;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.z-8 {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 184;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.image-9 {
+  position: absolute;
+  width: 311px;
+  height: 466px;
+  top: 0;
+  left: -6px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/card-image-7.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 185;
+}
+.absolute-a {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 186;
+}
+.z-b {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 187;
+}
+.flex-c {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 188;
+}
+.abby {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 189;
+}
+.text-28 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 74px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 190;
+}
+.text-xs-d {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 191;
+  overflow: hidden;
+}
+.ranch-life {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 268px;
+  height: 80px;
+  top: -20px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 192;
+  overflow: hidden;
+}
+.pages-wrapper-e {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 193;
+}
+.flex-f {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 194;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.z-10 {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 195;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.image-11 {
+  position: absolute;
+  width: 327px;
+  height: 478px;
+  top: -26px;
+  left: -13px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/061730/card-image-8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 196;
+}
+.absolute-12 {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 197;
+}
+.z-13 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 198;
+}
+.flex-14 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 199;
+}
+.selene {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 200;
+}
+.text-2b {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 87px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 201;
+}
+.alternative-model {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 202;
+  overflow: hidden;
+}
+.text-2c {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 235px;
+  height: 100px;
+  top: -30px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 203;
+  overflow: hidden;
+}
+
+.girls a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.text-9 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.img-1 {
+  width: 16px;
+  height: 16px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/chat-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 44;
+  overflow: hidden;
+}
+
+.spicy-chat {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 64px;
+  background: #131313;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.div-flex {
+  position: absolute;
+  width: 1344px;
+  height: 63px;
+  top: 0;
+  left: 544px;
+  background: #131313;
+  z-index: 25;
+}
+.div-h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 172px;
+  height: 32px;
+  top: 15px;
+  left: 1059.5px;
+  padding: 6px 16px 6px 16px;
+  background: #ce47ff;
+  z-index: 28;
+  border-radius: 8px;
+}
+.create-free-account {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 20px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 29;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 20px;
+  top: 22px;
+  left: 1263px;
+  color: #ce47ff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 32;
+}
+.svg-w {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  left: 32px;
+  z-index: 4;
+  overflow: hidden;
+}
+.span-sr-only {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  margin: -1px 0 0 17px;
+  z-index: 2;
+  overflow: hidden;
+}
+.open-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 102px;
+  height: 1px;
+  top: 0;
+  left: 2px;
+  color: #374151;
+  font-family: Inter, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 3;
+}
+.frame {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/sidebar-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 5;
+  overflow: hidden;
+}
+.img {
+  position: absolute;
+  width: 115px;
+  height: 30px;
+  top: 17px;
+  left: 86px;
+  z-index: 7;
+  overflow: hidden;
+}
+.image {
+  position: relative;
+  width: 115px;
+  height: 28px;
+  margin: 0 0 0 0;
+  z-index: 8;
+  overflow: hidden;
+}
+.spicy-chat-1 {
+  position: relative;
+  width: 89px;
+  height: 30px;
+  margin: -2px 0 0 8px;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 23.723106384277344px;
+  font-weight: 400;
+  line-height: 29.654px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 9;
+}
+.spicy {
+  position: relative;
+  color: #d471f9;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 23.723106384277344px;
+  font-weight: 400;
+  line-height: 29.654px;
+  text-align: left;
+}
+.chat {
+  position: relative;
+  color: #ffffff;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 23.723106384277344px;
+  font-weight: 400;
+  line-height: 29.654px;
+  text-align: left;
+}
+.anime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 41px;
+  height: 19px;
+  top: 21px;
+  left: 387px;
+  color: #ce47ff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 24;
+}
+.girls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 19px;
+  top: 21px;
+  left: 300px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 17;
+}
+.svg {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 23px;
+  left: 278px;
+  z-index: 15;
+  overflow: hidden;
+}
+.frame-2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/girls-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 16;
+  overflow: hidden;
+}
+.svg-3 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 23px;
+  left: 365px;
+  z-index: 22;
+  overflow: hidden;
+}
+.frame-4 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/anime-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 23;
+  overflow: hidden;
+}
+
+.anime a {
+  text-decoration: none;
+}

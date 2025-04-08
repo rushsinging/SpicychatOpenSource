@@ -1,0 +1,2169 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 1920px;
+  margin: 0 auto;
+}
+.spicy-chat {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 64px;
+  background: #131313;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.div-flex {
+  position: absolute;
+  width: 1344px;
+  height: 63px;
+  top: 0;
+  left: 544px;
+  background: #131313;
+  z-index: 25;
+}
+.div-h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 172px;
+  height: 32px;
+  top: 15px;
+  left: 1059.5px;
+  padding: 6px 16px 6px 16px;
+  background: #ce47ff;
+  z-index: 28;
+  border-radius: 8px;
+}
+.create-free-account {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 20px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 29;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 20px;
+  top: 22px;
+  left: 1263px;
+  color: #ce47ff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 32;
+}
+.svg-w {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  left: 32px;
+  z-index: 4;
+  overflow: hidden;
+}
+.span-sr-only {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  margin: -1px 0 0 17px;
+  z-index: 2;
+  overflow: hidden;
+}
+.open-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 102px;
+  height: 1px;
+  top: 0;
+  left: 2px;
+  color: #374151;
+  font-family: Inter, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 3;
+}
+.frame {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/sidebar-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 5;
+  overflow: hidden;
+}
+.img {
+  position: absolute;
+  width: 115px;
+  height: 30px;
+  top: 17px;
+  left: 86px;
+  z-index: 7;
+  overflow: hidden;
+}
+.image {
+  position: relative;
+  width: 115px;
+  height: 28px;
+  margin: 0 0 0 0;
+  z-index: 8;
+  overflow: hidden;
+}
+.spicy-chat-1 {
+  position: relative;
+  width: 89px;
+  height: 30px;
+  margin: -2px 0 0 8px;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 23.723106384277344px;
+  font-weight: 400;
+  line-height: 29.654px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 9;
+}
+.spicy {
+  position: relative;
+  color: #d471f9;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 23.723106384277344px;
+  font-weight: 400;
+  line-height: 29.654px;
+  text-align: left;
+}
+.chat {
+  position: relative;
+  color: #ffffff;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 23.723106384277344px;
+  font-weight: 400;
+  line-height: 29.654px;
+  text-align: left;
+}
+.anime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 41px;
+  height: 19px;
+  top: 21px;
+  left: 387px;
+  color: #ce47ff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 24;
+}
+.girls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 19px;
+  top: 21px;
+  left: 300px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 17;
+}
+.svg {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 23px;
+  left: 278px;
+  z-index: 15;
+  overflow: hidden;
+}
+.frame-2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/girls-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 16;
+  overflow: hidden;
+}
+.svg-3 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 23px;
+  left: 365px;
+  z-index: 22;
+  overflow: hidden;
+}
+.frame-4 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/anime-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 23;
+  overflow: hidden;
+}
+.div-5 {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 1016px;
+  background: #131313;
+  z-index: 33;
+  overflow: hidden;
+}
+.nav-flex {
+  position: absolute;
+  width: 219px;
+  height: 996px;
+  top: 0;
+  left: 0;
+  z-index: 34;
+}
+.list-py {
+  position: relative;
+  width: 219px;
+  height: 376px;
+  margin: 0 0 0 0;
+  z-index: 35;
+  overflow: hidden;
+}
+.item-relative {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 24px 0 0 24px;
+  z-index: 36;
+}
+.link-w-full {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 37;
+  border-radius: 10px;
+}
+.img-w {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 38;
+  overflow: hidden;
+}
+.image-6 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/explore-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 39;
+  overflow: hidden;
+}
+.explore {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 16px;
+  top: 11px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 40;
+}
+.item-relative-7 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 8px 0 0 24px;
+  z-index: 41;
+}
+.link-w-full-8 {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 42;
+  border-radius: 10px;
+}
+.img-w-9 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 43;
+  overflow: hidden;
+}
+.image-a {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/chat-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 44;
+  overflow: hidden;
+}
+.chat-b {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 16px;
+  top: 11px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 45;
+}
+.item-relative-c {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 8px 0 0 24px;
+  z-index: 46;
+}
+.link-w-full-d {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 47;
+  border-radius: 10px;
+}
+.img-w-e {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 48;
+  overflow: hidden;
+}
+.image-f {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/create-character-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 49;
+  overflow: hidden;
+}
+.create-character {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 16px;
+  top: 11px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 50;
+}
+.item-relative-10 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 8px 0 0 24px;
+  z-index: 51;
+}
+.link-relative {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 52;
+  border-radius: 10px;
+}
+.img-w-11 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 53;
+  overflow: hidden;
+}
+.image-12 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/generate-images-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 54;
+  overflow: hidden;
+}
+.generate-images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 12px;
+  top: 13px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 55;
+}
+.list-flex {
+  position: relative;
+  width: 219px;
+  height: 237px;
+  margin: 383px 0 0 0;
+  border-bottom: 1px solid #363636;
+  z-index: 56;
+  overflow: visible auto;
+}
+.item-relative-13 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 25px 0 0 24px;
+  z-index: 57;
+}
+.group {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  z-index: 58;
+  border-radius: 10px;
+}
+.frame-14 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  padding: 8px 155px 8px 155px;
+  background: linear-gradient(122.98deg, #ce47ff, #ab0de5);
+  z-index: 59;
+  border-radius: 10px;
+}
+.heart-add-line {
+  flex-shrink: 0;
+  position: absolute;
+  width: 21px;
+  height: 17px;
+  top: 12px;
+  left: 11px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/heart-add-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 63;
+  overflow: hidden;
+}
+.frame-15 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: -3px;
+  position: relative;
+  width: 63px;
+  z-index: 60;
+}
+.affection-level {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 13px;
+  color: #f2d1ff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 8.605371475219727px;
+  font-weight: 600;
+  line-height: 12.293px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 61;
+}
+.plus-50 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 32px;
+  height: 23px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 15.749999046325684px;
+  font-weight: 600;
+  line-height: 22.066px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 62;
+}
+.item-relative-16 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 9px 0 0 24px;
+  z-index: 64;
+}
+.link-border {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 65;
+  border-radius: 10px;
+}
+.discord {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 16px;
+  top: 9px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 68;
+}
+.img-w-17 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 66;
+  overflow: hidden;
+}
+.image-18 {
+  position: relative;
+  width: 16px;
+  height: 13px;
+  margin: 0 0 0 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/discord-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 67;
+  overflow: hidden;
+}
+.item-relative-19 {
+  position: relative;
+  width: 171px;
+  height: 40px;
+  margin: 9px 0 0 24px;
+  z-index: 69;
+}
+.div-border {
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 70;
+  border-radius: 10px;
+}
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 16px;
+  top: 9px;
+  left: 36px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 73;
+}
+.img-w-1a {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 12px;
+  z-index: 71;
+  overflow: hidden;
+}
+.image-1b {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/contact-us-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 72;
+  overflow: hidden;
+}
+.item-flex {
+  position: relative;
+  width: 171px;
+  height: 20px;
+  margin: 57px 0 0 24px;
+  font-size: 0px;
+  z-index: 74;
+  overflow: visible auto;
+}
+.privacy-notice {
+  display: block;
+  position: relative;
+  height: 8px;
+  margin: 10px 0 0 0;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 8px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 79;
+}
+.list-none {
+  position: relative;
+  width: 84px;
+  height: 8px;
+  margin: -6px 0 0 64px;
+  z-index: 75;
+  overflow: visible auto;
+}
+.terms-of-service {
+  position: relative;
+  width: 76px;
+  height: 8px;
+  margin: 0 0 0 0;
+  z-index: 76;
+}
+.span-bg-white {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 8px;
+  top: -2px;
+  left: 12px;
+  color: #d1d1d1;
+  font-family: Inter, var(--default-font-family);
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 8px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 78;
+}
+.flex-column {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 2px;
+  left: 0;
+  background: #ffffff;
+  z-index: 77;
+  border-radius: 9999px;
+}
+.div-relative {
+  position: absolute;
+  height: 1102px;
+  top: 40px;
+  right: 182px;
+  left: 458px;
+  z-index: 95;
+}
+.link {
+  position: relative;
+  width: 1280px;
+  height: 256px;
+  margin: 0 0 0 0;
+  background: #111827;
+  z-index: 80;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.div-absolute {
+  position: absolute;
+  width: 1289px;
+  height: 325px;
+  top: -62px;
+  left: 4px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/hero-banner.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 94;
+}
+.button-transition-colors {
+  position: absolute;
+  width: 50px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  z-index: 81;
+}
+.img-1c {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: -2px;
+  left: 0;
+  z-index: 82;
+}
+.image-1d {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: 0;
+  left: 0;
+  z-index: 83;
+  overflow: hidden;
+}
+.vector {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: 0;
+  left: 0;
+  z-index: 84;
+  overflow: hidden;
+}
+.pic-5 {
+  position: relative;
+  width: 10px;
+  height: 18px;
+  margin: 121px 0 0 20px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/left-arrow.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 85;
+}
+.div-absolute-1e {
+  position: absolute;
+  width: 50px;
+  height: 256px;
+  top: 0;
+  left: 1230px;
+  z-index: 86;
+}
+.button-transition-colors-1f {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: -2px;
+  left: 0;
+  z-index: 87;
+}
+.img-20 {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: 0;
+  left: 0;
+  z-index: 88;
+  overflow: hidden;
+}
+.image-21 {
+  position: absolute;
+  width: 50px;
+  height: 260px;
+  top: 0;
+  left: 0;
+  z-index: 89;
+  overflow: hidden;
+}
+.vector-22 {
+  position: relative;
+  width: 10px;
+  height: 18px;
+  margin: 121px 0 0 20px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/right-arrow.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 90;
+}
+.div-absolute-23 {
+  position: absolute;
+  width: 44px;
+  height: 6px;
+  top: 234px;
+  left: 618px;
+  z-index: 91;
+}
+.button-rounded-full {
+  position: absolute;
+  width: 18px;
+  height: 6px;
+  top: 0;
+  left: 26px;
+  background: #ce47ff;
+  z-index: 93;
+  border-radius: 9999px;
+}
+.button-rounded-full-24 {
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  top: 2px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 92;
+  border-radius: 9999px;
+}
+.group-25 {
+  position: relative;
+  width: 1280px;
+  height: 824px;
+  margin: 22px 0 0 0;
+  z-index: 95;
+  overflow: visible auto;
+}
+.flex-row-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 1280px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 138;
+}
+.turbo-frame-pages-wrapper {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 96;
+}
+.div-flex-26 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 97;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.div-absolute-27 {
+  position: relative;
+  width: 79px;
+  height: 44px;
+  margin: 0 0 0 221px;
+  z-index: 101;
+  overflow: visible auto;
+}
+.div-flex-28 {
+  position: relative;
+  width: 63px;
+  height: 28px;
+  margin: 8px 0 0 8px;
+  background: #ce47ff;
+  z-index: 102;
+  border-radius: 9999px;
+}
+.new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 31px;
+  height: 20px;
+  top: 4px;
+  left: calc(50% - 7.5px);
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 104;
+}
+.vector-29 {
+  position: absolute;
+  width: 17.32%;
+  height: 46.15%;
+  top: 30.49%;
+  left: 13.56%;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/new-badge-icon.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 103;
+}
+.video-z {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 98;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.image-2a {
+  position: absolute;
+  width: 310px;
+  height: 400px;
+  top: 0;
+  left: -5px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/irina-character.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 99;
+}
+.div-absolute-2b {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 100;
+}
+.div-z {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 105;
+}
+.div-flex-2c {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 106;
+}
+.irina {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 107;
+}
+.text-14 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 64px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 108;
+}
+.p-text-xs {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 109;
+  overflow: hidden;
+}
+.wealthy-russian-heiress {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 246px;
+  height: 100px;
+  top: -30px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 110;
+  overflow: hidden;
+}
+.turbo-frame-pages-wrapper-2d {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 111;
+}
+.div-flex-2e {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 112;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.div-absolute-2f {
+  position: relative;
+  width: 79px;
+  height: 44px;
+  margin: 0 0 0 221px;
+  z-index: 116;
+  overflow: visible auto;
+}
+.div-flex-30 {
+  position: relative;
+  width: 63px;
+  height: 28px;
+  margin: 8px 0 0 8px;
+  background: #ce47ff;
+  z-index: 117;
+  border-radius: 9999px;
+}
+.new-31 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 31px;
+  height: 20px;
+  top: 4px;
+  left: 24px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 120;
+}
+.img-w-32 {
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  top: 8px;
+  left: 8px;
+  z-index: 118;
+  overflow: hidden;
+}
+.image-33 {
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/new-icon.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 119;
+  overflow: hidden;
+}
+.video-z-34 {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 113;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.image-35 {
+  position: absolute;
+  width: 309px;
+  height: 463px;
+  top: 0;
+  left: -5px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/selina-character.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 114;
+}
+.div-absolute-36 {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 115;
+}
+.div-z-37 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 121;
+}
+.div-flex-38 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 122;
+}
+.selina {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 123;
+}
+.soldier-oman-martial {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 82px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 124;
+}
+.p-text-xs-39 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 125;
+  overflow: hidden;
+}
+.selina-desert-discipline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 235px;
+  height: 100px;
+  top: -30px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 126;
+  overflow: hidden;
+}
+.turbo-frame-pages-wrapper-3a {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 127;
+}
+.div-flex-3b {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 128;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.video-z-3c {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 129;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.image-3d {
+  position: absolute;
+  width: 338px;
+  height: 493px;
+  top: 0;
+  left: -19px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/lila-character.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 130;
+}
+.div-absolute-3e {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 131;
+}
+.div-z-3f {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 132;
+}
+.div-flex-40 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 133;
+}
+.lila {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 134;
+}
+.college-student {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 135;
+}
+.p-text-xs-41 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 136;
+  overflow: hidden;
+}
+.lila-chaotic-energy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 276px;
+  height: 240px;
+  top: -100px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 137;
+  overflow: hidden;
+}
+.turbo-frame-pages-wrapper-42 {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 138;
+}
+.div-flex-43 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 139;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.video-z-44 {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 140;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.image-45 {
+  position: absolute;
+  width: 320px;
+  height: 427px;
+  top: -13px;
+  left: -10px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/calista-character.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 141;
+}
+.div-absolute-46 {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 142;
+}
+.div-z-47 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 143;
+}
+.div-flex-48 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 144;
+}
+.calista {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 145;
+}
+.wealth-luxury {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 97px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 146;
+}
+.p-text-xs-49 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 147;
+  overflow: hidden;
+}
+.calista-appearance {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 273px;
+  height: 100px;
+  top: -30px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 148;
+  overflow: hidden;
+}
+.flex-row-a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 1280px;
+  height: 400px;
+  margin: 24px 0 0 0;
+  z-index: 187;
+}
+.turbo-frame-pages-wrapper-4a {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 149;
+}
+.div-flex-4b {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 150;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.video-z-4c {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 151;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.image-4d {
+  position: absolute;
+  width: 305px;
+  height: 575px;
+  top: -41px;
+  left: -5px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/savannah-character.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 152;
+}
+.div-absolute-4e {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 153;
+}
+.div-z-4f {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 154;
+}
+.div-flex-50 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 155;
+}
+.savannah {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 156;
+}
+.freshman-college {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 135px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 157;
+}
+.p-text-xs-51 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 158;
+  overflow: hidden;
+}
+.savannah-adventures {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 225px;
+  height: 120px;
+  top: -40px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 159;
+  overflow: hidden;
+}
+.turbo-frame-pages-wrapper-52 {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 160;
+}
+.div-flex-53 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 161;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.div-absolute-54 {
+  position: relative;
+  width: 79px;
+  height: 44px;
+  margin: 0 0 0 221px;
+  z-index: 165;
+  overflow: visible auto;
+}
+.div-flex-55 {
+  position: relative;
+  width: 63px;
+  height: 28px;
+  margin: 8px 0 0 8px;
+  background: #ce47ff;
+  z-index: 166;
+  border-radius: 9999px;
+}
+.span-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 31px;
+  height: 20px;
+  top: 4px;
+  left: 24px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 169;
+}
+.div-img-w {
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  top: 8px;
+  left: 8px;
+  z-index: 167;
+  overflow: hidden;
+}
+.div-image {
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/new-badge-small.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 168;
+  overflow: hidden;
+}
+.div-video-z {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 162;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.div-image-56 {
+  position: absolute;
+  width: 302px;
+  height: 596px;
+  top: 0;
+  left: -1px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/seraphina-character.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 163;
+}
+.div-absolute-57 {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 164;
+}
+.div-z-58 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 170;
+}
+.div-flex-59 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 171;
+}
+.span-seraphina {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 172;
+}
+.span-22 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 135px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 173;
+}
+.div-p-text-xs {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 174;
+  overflow: hidden;
+}
+.span-american-biker-chick {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  top: -30px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 175;
+  overflow: hidden;
+}
+.div-turbo-frame-pages-wrapper {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 176;
+}
+.div-flex-5a {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 177;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.div-video-z-5b {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 178;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.div-image-5c {
+  position: absolute;
+  width: 311px;
+  height: 466px;
+  top: 0;
+  left: -6px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/abby-character.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 179;
+}
+.div-absolute-5d {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 180;
+}
+.div-z-5e {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 181;
+}
+.div-flex-5f {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 182;
+}
+.span-abby {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 183;
+}
+.span-21 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 74px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 184;
+}
+.div-p-text-xs-60 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 185;
+  overflow: hidden;
+}
+.span-family-farm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 268px;
+  height: 80px;
+  top: -20px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 186;
+  overflow: hidden;
+}
+.div-turbo-frame-pages-wrapper-61 {
+  flex-shrink: 0;
+  position: relative;
+  width: 302px;
+  height: 400px;
+  z-index: 187;
+}
+.div-flex-62 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+  z-index: 188;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.div-video-z-63 {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 189;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.div-image-64 {
+  position: absolute;
+  width: 327px;
+  height: 478px;
+  top: -26px;
+  left: -13px;
+  background: url(https://static.codia.ai/custom_image/2025-04-07/054028/selene-character.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 190;
+}
+.div-absolute-65 {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 220px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(14, 14, 14, 0.9));
+  z-index: 191;
+}
+.div-z-66 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  top: 319px;
+  left: 0;
+  z-index: 192;
+}
+.div-flex-67 {
+  position: relative;
+  width: 252px;
+  height: 25px;
+  margin: 0 0 0 24px;
+  z-index: 193;
+}
+.span-selene {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 194;
+}
+.span-19 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: -6px;
+  left: 87px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 195;
+}
+.div-p-text-xs-68 {
+  position: relative;
+  width: 252px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  z-index: 196;
+  overflow: hidden;
+}
+.span-alternative-goth-girl {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 235px;
+  height: 100px;
+  top: -30px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 197;
+  overflow: hidden;
+}
+
+.anime a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.chat-b a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.section-3 {
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  top: 50%;
+  left: 86px;
+  transform: translate(0, -50%);
+  z-index: 7;
+  overflow: hidden;
+}
+.wrapper-3 {
+  position: relative;
+  width: 150px;
+  height: 28px;
+  margin: 0 0 0 0;
+  z-index: 8;
+  overflow: hidden;
+}
+.box {
+  position: relative;
+  width: 104px;
+  height: 34px;
+  margin: -4.191px 0 0 8px;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 27.188278198242188px;
+  font-weight: 400;
+  line-height: 33.985px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 9;
+}
+.text-4 {
+  position: relative;
+  color: #d471f9;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 27.188278198242188px;
+  font-weight: 400;
+  line-height: 33.985px;
+  text-align: left;
+}
+.text-5 {
+  position: relative;
+  color: #ffffff;
+  font-family: Jaro, var(--default-font-family);
+  font-size: 27.188278198242188px;
+  font-weight: 400;
+  line-height: 33.985px;
+  text-align: left;
+}
+
+.girls a {
+  text-decoration: none;
+}
