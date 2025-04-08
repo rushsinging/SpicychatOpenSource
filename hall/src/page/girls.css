@@ -2159,6 +2159,9 @@ button {
   text-decoration: none;
   color: #ffffff;
 }
+.girls a:hover {
+  cursor: pointer;
+}
 
 .text-9 a {
   text-decoration: none;
@@ -2417,4 +2420,12 @@ button {
 
 .anime a {
   text-decoration: none;
+}
+
+.anime a:hover {
+  cursor: pointer;
+}
+
+.chat a:hover {
+  cursor: pointer;
 }

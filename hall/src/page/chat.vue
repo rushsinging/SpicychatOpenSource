@@ -265,7 +265,7 @@ onMounted(() => {
 
   ws.value.onclose = () => {
     console.log("WebSocket is closed");
-    // alert("WebSocket is closed, Please refresh the page");
+    alert("WebSocket is closed, Please refresh the page");
   };
 });
 </script>

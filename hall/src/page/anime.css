@@ -2167,3 +2167,12 @@ button {
 .girls a {
   text-decoration: none;
 }
+.girls a:hover {
+  cursor: pointer;
+}
+.anime a:hover {
+  cursor: pointer;
+}
+.chat a:hover {
+  cursor: pointer;
+}

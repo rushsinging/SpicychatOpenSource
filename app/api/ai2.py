@@ -1,21 +1,20 @@
-import requests
+import os
 import json
+import httpx
 from datetime import datetime
 
 import asyncio
 
 
 # url = "https://api.x.ai/v1/chat/completions"
-url = "http://43.134.234.162:8080/api/chat"
+url = os.getenv("AI_URL")
 
 headers = {
     "Content-Type": "application/json",
     "Authorization": ""
 }
 
-data = {
-    "messages": [
-        {"role": "system", "content": '''
+settings = '''
 你是Sunny，女性
 
 基础设定：
@@ -39,48 +38,63 @@ data = {
 发生对话的场景一般是无人的学校的教室、仓库、天台，打工的咖啡馆，租住的公寓，以及主角的家里。在对话时可以切换在我的要求下切换场景，比如从教室切换到天台，从天台切换到咖啡馆，从咖啡馆切换到公寓，从公寓切换到家里。
 
 现在的场景是剩下我一个人的教室，你来到教室，坐在我的旁边，开始和我对话。
-         '''},
+'''
+data = {
+    "messages": [
+        {"role": "system", "content": settings}
     ],
     "model": "huihui_ai/qwen2.5-abliterate:14b",
     "stream": True,
     "temperature": 0
 }
 
+async def chat(settings: str, model: str, messages: list):
+    client = httpx.AsyncClient()
+    data["messages"] = [{"role": "system", "content": settings}] + messages
+    data["model"] = model
+    stream = client.stream("POST", url, headers=headers, json=data)
+    return stream
 
-n = 1
-while True:
+
+async def test():
+    n = 1
+    messages = []
     content = ""
-    stream = requests.post(url, headers=headers, json=data, stream=True)
-    print("stream:", stream)
-    for l in stream.iter_lines():
-        l = l.decode("utf-8")
-        # print(l, type(l))
-        if l.startswith("data:"):
-            l = l[5:]
-            if l.startswith("event: "):
-                l = l[6:]
-            if l.startswith("data: "):
-                l = l[5:]
-        try:
-            d = json.loads(l)
-            # print("d:", d)
-        except:
-            continue
+    while True:
+        async with await chat(
+            settings,
+            "huihui_ai/qwen2.5-abliterate:14b",
+            messages
+        ) as stream:
+            async for l in stream.aiter_lines():
+                print(l)
+                if l.startswith("data:"):
+                    l = l[5:]
+                if l.startswith("event: "):
+                    l = l[6:]
+                if l.startswith("data: "):
+                    l = l[5:]
 
-        if "message" not in d:
-            continue
+                try:
+                    d = json.loads(l)
+                    # print("d:", d)
+                except:
+                    continue
 
-        if "content" not in d["message"]:
-            continue
+                if "message" not in d:
+                    continue
 
-        content += d["message"]["content"]
-        print(d["message"]["content"], end="", flush=True)
+                if "content" not in d["message"]:
+                    continue
 
-    print()
-    data["messages"].append({"role": "assistant", "content": content})
-    message = input(f"You({n}): ")
-    data["messages"].append({"role": "user", "content": message})
-    n += 1
+                content += d["message"]["content"]
+                print(d["message"]["content"], end="", flush=True)
+
+        print()
+        messages.append({"role": "assistant", "content": content})
+        message = input(f"You({n}): ")
+        messages.append({"role": "user", "content": message})
+        n += 1
 
 
 if __name__ == "__main__":

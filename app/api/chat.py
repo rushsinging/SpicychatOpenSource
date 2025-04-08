@@ -89,20 +89,23 @@ class Room:
     async def chat(self, message: dict):
         t_user = datetime.now()
         history = get_room_history(self.room_id)
-        async def send(content):
+        content = ""
+        async for l in await self.ai.chat(message["message"], history):
+            w = l["message"].get("content", "")
+            content += w
             await self.socket.send_json(Message(
                 0,
                 "message_stream",
-                content,
+                w,
                 "text", self.character_id,
                 datetime.now()
             ).to_json())
-        content = await self.ai.chat(message["message"], history, send)
+
 
         await self.socket.send_json(Message(
             0,
             "message_end",
-            "",
+            content,
             "text", self.character_id,
             datetime.now()
         ).to_json())

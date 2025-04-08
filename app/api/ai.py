@@ -1,6 +1,7 @@
 import os
 import json
 from typing import Callable
+import ollama
 import requests
 
 from app.api.bs import get_character, get_model_by_name
@@ -26,7 +27,7 @@ class AI:
     def set_model(self, model: str):
         self.model = model
 
-    async def chat(self, message: str, history: list, message_handler: Callable):
+    async def chat(self, message: str, history: list):
         if not self.model:
             self.model = DEFAULT_MODEL
 
@@ -61,36 +62,16 @@ class AI:
         if model['extra_args']:
             data.update(model['extra_args'])
 
-        stream = requests.post(
-            url, headers=headers, json=data, stream=True)
+        client = ollama.AsyncClient(
+            host=model['api'],
+        )
+        stream = await client.chat(
+            model=model['model'],
+            messages=messages,
+            stream=True,
+        )
 
-        content = ""
-        for l in stream.iter_lines():
-            l = l.decode("utf-8")
-            print("l:", l)
-            if l.startswith("data:"):
-                l = l[5:]
-            if l.startswith("event: "):
-                l = l[6:]
-            if l.startswith("data: "):
-                l = l[5:]
-            try:
-                d = json.loads(l)
-                # print("d:", d)
-            except:
-                continue
-
-            if "message" not in d:
-                continue
-
-            if "content" not in d["message"]:
-                continue
-
-            word = d["message"]["content"]
-            content += word
-            await message_handler(word)
-
-        return content
+        return stream
 
 
 if __name__ == "__main__":
